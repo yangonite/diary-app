@@ -11,6 +11,72 @@
   max-width: 500px;
 }
 
-.date-picker-signup .ant-picker {
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  overflow: hidden;
+}
+
+/* <li class="ant-menu-overflow-item ant-menu-item ant-menu-item-active ant-menu-item-selected ant-menu-item-only-child" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-50552-2-logo" style="opacity: 1; order: 0;"><span class="ant-menu-title-content"><div class="lo */
+.home-video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-title {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-text {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-weight: lighter;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+*/ .date-picker-signup .ant-picker {
   width: 100%;
 }
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 35px;
+  gap: 30px;
+}
+
+.home-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 75%;
+  height: 100%;
+  margin: 0 auto; /* uses parent container to margin 0 the top and bot, but auto makes it right in the middle of its parent container */
+}
+
+.home-card-title {
+  text-align: center;
+  font-size: large;
+}
+
+.ant-menu-overflow-item.ant-menu-item.ant-menu-item-only-child {
+  margin-left: auto;
+}
+
+.home-nav-buttons button {
+  margin-right: 20px;
+}
+
+/* dashboard css 
+*/

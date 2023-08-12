@@ -8,7 +8,6 @@ import {
 } from "firebase/auth";
 
 import { useNavigate } from "react-router-dom";
-import { useAccordionButton } from "react-bootstrap";
 
 const AuthContext = React.createContext();
 
@@ -32,11 +31,13 @@ export function AuthProvider({ children }) {
   function logout() {
     return signOut(auth).finally(() => {
       navigate("/");
+      setCurrentUser(""); // clear the user after logging out
+      console.log("logged out activated");
     });
   }
 
   function resetPassword(email) {
-    return auth.sendPasswordResetEmail(email);
+    return auth.sendPasswordResetEmail(auth, email);
   }
 
   function updateEmail(email) {

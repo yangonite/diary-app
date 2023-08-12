@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ForgotPassword from "./ForgotPassword";
 import UpdateProfile from "./UpdateProfile";
 import HomePage from "./HomePage";
+import CreateEntry from "./CreateEntry";
+import PastDiaries from "./PastEntries";
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/login" element={<Login />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
+            <Route path="/create-entry" element={<CreateEntry />} />
+            <Route path="/past-diaries" element={<PastDiaries />} />
           </Routes>
         </AuthProvider>
       </Router>
